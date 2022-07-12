@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    /* height: 100%; */
+    background-color: #FFC3C3;
+    color: #FF8C8C;
+}
+
+li{
+    list-style: none;
+}
+
+i{
+    font-size: 30px;
+}
+
+.total ul li{
+    margin: 20px 0px;
+}
+
+.weatherImg{
+    display: block;
+    width: 120px;
+    margin: 0px auto;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.location li{
+    display: inline-block;
+}
+
+.location-logo{
+    width: 20px;
+}
+
+.feels-like{
+    float: left;
+    width: 50%;
+    border: 3px solid #FF8C8C;
+}
+
+.feels-like ul li{
+    display: inline-block;
+}
+
+.feels-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.humidity{
+    float: right;
+    width: 50%;
+    border: 3px solid #FF8C8C;
+    border-left: 0px;
+}
+
+.humidity ul li{
+    display: inline-block;
+}
+
+.humidity-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.max-min{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+.max-min ul li{
+    display: inline-block;
+}
+
+
+hr{
+    transform: rotate(90deg);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+}
+
+.bottom-img{
+    width: 30px;
+}

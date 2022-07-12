@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <img class="weatherImg" src=<%=image%> alt="">
+
+    <div class="total">
+        <ul>
+            <li>
+                <h1><%=temprature%>°C</h1>
+            </li>
+            <li class="desc">
+                <ul>
+                    <li>
+                        <p><%=descInWeb%></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="location">
+                <ul>
+                    <li>
+                        <i class="uil uil-map-pin logos"></i>
+                        <!-- <img class="location-logo logos" src="/location.png" alt=""> -->
+                    </li>
+                    <li>
+                        <p><%=city%>, <%=con%></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="max-min">
+                <ul>
+                    <li class="range">
+                        Min <%=mintemp%>°C | Max <%=maxtemp%>°C
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="feels-like">
+            <ul class="feels-data">
+                <li>
+                    <i class="uil uil-temperature logos"></i>
+                    <!-- <img class="bottom-img logos" src="/celsius.png" alt=""> -->
+                </li>
+                <li>
+                    <p><%=feelsLike%>°C</p>
+                    <p>Feels like</p>
+                </li>
+            </ul>
+        </div>
+        <div class="humidity">
+            <ul class="humidity-data">
+                <li>
+                    <i class="uil uil-tear logos"></i>
+                    <!-- <img src="/humidity.png" class="bottom-img logos" alt=""> -->
+                </li>
+                <li>
+                    <p><%=humidity%>%</p>
+                    <p>Humidity</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
