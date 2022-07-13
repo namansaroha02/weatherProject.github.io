@@ -32,8 +32,9 @@ app.post("/",function(req,res){
             const max=weatherData.main.temp_max;
             const country=weatherData.sys.country;
             const hum=weatherData.main.humidity;
+            const userCity=weatherData.name;
             
-            res.render("weather",{image:imgURL,temprature:temp,descInWeb:desc,city:query,con:country,mintemp:min,maxtemp:max,feelsLike:feeling,humidity:hum});
+            res.render("weather",{image:imgURL,temprature:temp,descInWeb:desc,city:userCity,con:country,mintemp:min,maxtemp:max,feelsLike:feeling,humidity:hum});
             res.sendFile(__dirname+"/views/weather.ejs")
         });
     });
@@ -41,6 +42,6 @@ app.post("/",function(req,res){
 });
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT||3000,function(){
     console.log("server is running on port 3000");
 });
